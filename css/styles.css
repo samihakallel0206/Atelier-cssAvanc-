@@ -1,0 +1,124 @@
+/* test */
+* {
+  /* background-color: blueviolet; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.291);
+}
+/* barre de anvigation */
+.barreNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 1%;
+  width:100%;
+  position: sticky;
+  top:0;
+  left:0;
+
+}
+.barreNav img{
+    width: 100px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    margin-right:50px;
+
+
+}
+.list li{
+    margin:20px;
+    list-style: none;
+
+
+}
+.list a{
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+/* ****************************************************************** */
+/* comment centrer mes éléments */
+main{
+    min-height: 90vh;
+}
+.centrer{
+    margin-top:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.centrer img{
+    width: 200px;
+    border-radius: 50%;
+}
+.centrer h1{
+    margin: 1%;
+    color: #56a4d4;
+}
+
+/* ********************************************************* */
+/* display Grid */
+.texte{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    margin:40px;
+    padding: 2%;
+    text-align:justify;
+    font-weight: 500;
+}
+
+/* ************************************************************* */
+/* position */
+footer{
+    background-color: #fff;
+    position:relative;
+    /* max-height: 5vh; */
+    min-height:100px ;
+    img{
+        width: 120px;
+        position:absolute;
+        top:20px;
+        left:45%
+    }
+}
+
+/* *************************************
+ */
+ /* media query */
+ @media screen and (max-width: 992px) {
+    .texte{
+        display: block;
+    }
+    .texte p{
+        background-color: #56a4d4;
+        
+
+    }
+    footer{
+      position:static;
+      img{
+        position: static;
+      }
+    }
+ }
+
+ @media screen and (max-width: 576px) {
+    footer{
+        display:none
+    }
+ }
